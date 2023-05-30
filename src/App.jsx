@@ -3,7 +3,9 @@ import React, {useState} from 'react'
 import { LoadingButton } from '@mui/lab'
 import { Container, Typography, Box, TextField } from '@mui/material'
 
-export default function App({ apiKey}) {
+import WeatherDisplay from './WeatherDisplay'
+
+export default function App({ apiKey }) {
   const API_WEATHER = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`
   const [city, setCity] = useState('')
   const [loading, setLoading] = useState(false)
@@ -30,11 +32,12 @@ export default function App({ apiKey}) {
     })
     try{
       if(!city.trim()) throw { message:'No hay ciudad, llenar campo obligatorio'}
+      
       const response = await fetch(`${API_WEATHER}${city}`)
       const data = await response.json()
-      console.log(API_WEATHER)
-      console.log(data)
+
       if(data.error) throw { message: data.error.message}
+      
         setWeather({
           city: data.location.name,
           country: data.location.country,
@@ -100,37 +103,7 @@ export default function App({ apiKey}) {
           </LoadingButton>  
         </Box>
 
-        {weather.city && (
-        <Box
-          sx = {{
-            mt: 2,
-            display: 'grid',
-            gap: 2,
-            textAlign: 'center',
-          }}
-        >
-
-       <Typography variant = 'h4' component = 'h2'>
-            {weather.city}, {weather.country}
-          </Typography>
-
-          <Box
-            component = 'img'
-            alt = {weather.conditionText}
-            src = {weather.icon}
-            sx = {{ margin: '0 auto'}}
-          />
-
-          <Typography variant = 'h5' component = 'h3'>
-            {weather.temp} °C
-          </Typography>
-
-          <Typography variant = 'h6' component = 'h4'>
-            {weather.conditionText}
-          </Typography>
-
-        </Box>
-        )}
+        {weather.city && <WeatherDisplay weather= { weather} /> }
 
         <Typography
           textAlign = 'center'
