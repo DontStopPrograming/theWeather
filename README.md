@@ -3,11 +3,12 @@
 <br/>
 
 <h2> 🌦️ Hello everyone! </h2>
-Let me introduce you to Weather API, an incredible tool to obtain real-time weather forecasts. 🌈
+<p>🌈 Let me introduce you to Weather API, an incredible tool to obtain real-time weather forecasts. </p>
 
-🌍 This API is sourced from the official WeatherAPI.com website, allowing us to access precise and up-to-date weather data from anywhere in the world. It provides detailed information about temperature, weather conditions, wind speed, and more.
+<p>🌍 This API is sourced from the official WeatherAPI.com website, allowing us to access precise and up-to-date weather data from anywhere in the world. It provides detailed information about temperature, weather conditions, wind speed, and more. </p>
 
-🔍 The best part is that it's incredibly easy to integrate into your applications and websites. The API is highly intuitive, enabling you to display weather forecasts quickly and effortlessly in your projects.
+<p>🔍 The best part is that it's incredibly easy to integrate into your applications and websites. The API is highly intuitive, enabling you to display weather forecasts quickly and effortlessly in your projects.</p>
 
-⚡️ It is optimized to deliver fast and reliable results, ensuring that you receive accurate real-time data.
+<p>⚡️ It is optimized to deliver fast and reliable results, ensuring that you receive accurate real-time data.</p>
+<br>
 <a href='https://dyamond.up.railway.app'> Return to portfolio</a>
