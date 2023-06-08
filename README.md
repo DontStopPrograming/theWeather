@@ -3,4 +3,9 @@
 <br/>
 
 <h2></h2>
+ This API is sourced from the official WeatherAPI.com website, allowing us to access precise and up-to-date weather data from anywhere in the world. It provides detailed information about temperature, weather conditions, wind speed, and more.
+
+🔍 The best part is that it's incredibly easy to integrate into your applications and websites. The API is highly intuitive, enabling you to display weather forecasts quickly and effortlessly in your projects.
+
+⚡️ It is optimized to deliver fast and reliable results, ensuring that you receive accurate real-time data.
 <a href='https://dyamond.up.railway.app'> Return to portfolio</a>
